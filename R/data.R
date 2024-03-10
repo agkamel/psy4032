@@ -23,6 +23,7 @@
 #' @source Généré à l'aide du package {agk}.
 "score01"
 
+
 #' Score02
 #'
 #' Variable discrète ayant 20 participants.
@@ -34,6 +35,7 @@
 #' }
 #' @source Généré à l'aide du package {agk}.
 "score02"
+
 
 #' Anxiété
 #'
@@ -47,6 +49,7 @@
 #' @source Généré à l'aide du package {agk}.
 "anxiete"
 
+
 #' Dépression
 #'
 #' Variable ordinale à 40 points ayant 20 participants.
@@ -58,6 +61,7 @@
 #' }
 #' @source Généré à l'aide du package {agk}.
 "depression"
+
 
 #' Couleur
 #'
