@@ -25,16 +25,21 @@ Ce package contient plusieurs jeu de données utilisées pour le cours d'Analyse
 Pour installer la version de développement du package:
 
 ```{r, eval=FALSE, echo=TRUE}
-install.packages("remotes") # Si le package "remotes" n'est pas installé.
+#install.packages("remotes")    # S'il n'est pas déjà intallé
 remotes::install_github("agkamel/psy4032")
 ```
 
 ## Example
 
-Une fois le package chargé, les jeu de données sont immédiatement accessibles.
+Une fois le package chargé, les jeux de données sont immédiatement accessibles.
 
-```{r example}
+```{r example1}
 library(psy4032)
-# Exempl à ajouter ici...
+couleur
+```
+
+
+```{r example2}
+vitesse
 ```
 
