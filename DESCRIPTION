@@ -3,7 +3,7 @@ Type: Package
 Title: Analyse quantitative en psychologie - PSY4032
 Version: 0.1.0
 Author: Alexandre Gellen-Kamel
-Maintainer: Alexandre Gellen-Kamel <alexandre.gellen.kamel@gmail.com>
+Maintainer: Alexandre Gellen-Kamel <agkamel@outlook.com>
 Description: Jeu de données pour le cours d'Analyse quantitative en psychologie (PSY4032).
 License: CC BY 4.0
 Encoding: UTF-8
@@ -14,3 +14,5 @@ Config/testthat/edition: 3
 RoxygenNote: 7.3.1
 Depends: 
     R (>= 2.10)
+URL: https://github.com/agkamel/psy4032
+BugReports: https://github.com/agkamel/psy4032/issues
