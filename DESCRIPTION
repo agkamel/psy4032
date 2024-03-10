@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Alexandre Gellen-Kamel
 Maintainer: Alexandre Gellen-Kamel <agkamel@outlook.com>
 Description: Jeu de données pour le cours d'Analyse quantitative en psychologie (PSY4032).
-License: CC BY 4.0
+License: CC0
 Encoding: UTF-8
 LazyData: true
 Suggests: 
