@@ -8,7 +8,7 @@
 ## `depression`
 Un vecteur de longueur 20.
 \describe{
-  \item{depression}{Mesure d'un score de vitesse en seconde}
+  \item{depression}{Mesure à l'aide d'un test de symptômes dépressifs}
 }
 }
 \source{

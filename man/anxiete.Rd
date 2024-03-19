@@ -8,7 +8,7 @@
 ## `anxiete`
 Un vecteur de longueur 20.
 \describe{
-  \item{anxiete}{Mesure d'un score de vitesse en seconde}
+  \item{anxiete}{Mesure à l'aide d'un test de symptômes d'anxiété}
 }
 }
 \source{

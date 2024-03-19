@@ -8,7 +8,7 @@
 ## `score01`
 Un vecteur de longueur 20.
 \describe{
-  \item{score01}{Mesure d'un score de vitesse en seconde}
+  \item{score01}{Mesure d'un score à un temps 1}
 }
 }
 \source{

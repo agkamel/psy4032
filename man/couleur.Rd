@@ -8,7 +8,7 @@
 ## `couleur`
 Un vecteur de longueur 20.
 \describe{
-  \item{couleur}{Mesure d'un score de vitesse en seconde}
+  \item{couleur}{Couleur préférée du participant}
 }
 }
 \source{
