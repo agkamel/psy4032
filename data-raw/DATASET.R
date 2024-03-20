@@ -39,7 +39,7 @@ usethis::use_data(tableau, overwrite = TRUE)
 
 tableau500 <- agk::create_dataset(n = 500, v = 10)
 
-tableau500 |> dplyr::mutate(
+tableau500 <- tableau500 |> dplyr::mutate(
   id = 1:nrow(tableau500),
   age = agk::rescale(v01, mean = 35, sd = 15) |> agk::as_discrete(),
   sexe = agk::as_nominal(v02, points = 2, levels = c("h", "f")),
