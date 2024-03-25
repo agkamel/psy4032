@@ -157,3 +157,25 @@
 #' }
 #' @source Généré à l'aide du package {agk}.
 "tableau500"
+
+
+#' Tableau 10000
+#'
+#' Un tableau de données ayant 10000 participants et donc certaines variables sont corrélées.
+#'
+#' @format ## `tableau10000`
+#' Un tableau de données ayant 10000 participants
+#' \describe{
+#'   \item{id}{Numéro d'identification unique du participant}
+#'   \item{age}{Âge du participant}
+#'   \item{sexe}{Sexe du participant}
+#'   \item{presence}{Présence ou absence du participant}
+#'   \item{vitesse}{Mesure d'un score de vitesse en seconde}
+#'   \item{anxiete}{Mesure à l'aide d'un test de symptômes d'anxiété}
+#'   \item{depression}{Mesure à l'aide d'un test de symptômes dépressifs}
+#'   \item{couleur}{Couleur préférée du participant}
+#'   \item{score01}{Mesure d'un score à un temps 1}
+#'   \item{score02}{Mesure d'un score à un temps 2}
+#' }
+#' @source Généré à l'aide du package {agk}.
+"tableau10000"

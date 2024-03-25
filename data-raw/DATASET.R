@@ -54,6 +54,30 @@ tableau500 <- tableau500 |> dplyr::mutate(
 
 usethis::use_data(tableau500, overwrite = TRUE)
 
+
+tableau10000 <- agk::create_dataset(n = 10000, v = 10)
+
+tableau10000 <- tableau10000 |> dplyr::mutate(
+  id = 1:nrow(tableau10000),
+  age = agk::rescale(v01, mean = 35, sd = 15) |> agk::as_discrete(),
+  sexe = agk::as_nominal(v02, points = 2, levels = c("h", "f")),
+  presence = agk::as_dichotomous(v03, points = 2, levels = c("present", "absent")),
+  vitesse = agk::rescale(v04, mean = 25, sd = 5) |> agk::as_continuous(),
+  anxiete = agk::as_ordinal(v05, points = 20),
+  depression = agk::as_ordinal(v06, points = 40),
+  couleur = agk::as_nominal(v07, levels = c("bleu", "rouge", "vert")),
+  score01 = agk::rescale(v08, mean = 50, sd = 10) |> agk::as_discrete(),
+  score02 = agk::rescale(v09, mean = 70, sd = 7) |> agk::as_discrete()
+) |> dplyr::select(!c("v01", "v02", "v03", "v04", "v05", "v06", "v07", "v08", "v09", "v10"))
+
+usethis::use_data(tableau10000, overwrite = TRUE)
+
+
+
+
+
+
+
 data_context <- dplyr::tribble(
   ~var, ~type, ~points, ~mean, ~sd, ~levels,
   "depression", "ordinal", 20, 10, 5, NA,
