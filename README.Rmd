@@ -33,13 +33,13 @@ remotes::install_github("agkamel/psy4032")
 
 Une fois le package chargé, les jeux de données sont immédiatement accessibles.
 
-```{r example1}
+```{r example1, eval=FALSE}
 library(psy4032)
-couleur
+var_couleur
 ```
 
 
-```{r example2}
-vitesse
+```{r example2, eval=FALSE}
+var_temps
 ```
 
