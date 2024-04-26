@@ -17,4 +17,7 @@ Depends:
 URL: https://github.com/agkamel/psy4032
 BugReports: https://github.com/agkamel/psy4032/issues
 Imports: 
-    stats
+    dplyr,
+    ggplot2,
+    stats,
+    tidyr
