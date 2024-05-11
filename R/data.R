@@ -195,3 +195,28 @@
 #' }
 #' @source Généré à l'aide du package {agk}.
 "tab10000"
+
+
+#' Anxiété
+#'
+#' Variable discrète ayant 500 participants.
+#'
+#' @format ## `var_anxiete500`
+#' Un vecteur de longueur 500.
+#' \describe{
+#'   \item{var_anxiete500}{Score d'anxiété}
+#' }
+#' @source Généré à l'aide du package {agk}.
+"var_anxiete500"
+
+#' Temps
+#'
+#' Variable continue ayant 500 participants.
+#'
+#' @format ## `var_temps500`
+#' Un vecteur de longueur 500.
+#' \describe{
+#'   \item{var_temps500}{Mesure de temps}
+#' }
+#' @source Généré à l'aide du package {agk}.
+"var_temps500"

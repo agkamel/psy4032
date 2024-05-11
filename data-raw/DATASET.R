@@ -80,6 +80,15 @@ tab10000 <- tab10000 |> dplyr::mutate(
 usethis::use_data(tab10000, overwrite = TRUE)
 
 
+# Pour les distributions de données
+
+var_anxiete500 <- agk::create_discrete(n = 500, mean = 32, sd = 20.7)
+
+var_temps500 <- agk::create_continuous(n = 500, mean = 56, sd = 14.2)
+
+usethis::use_data(var_anxiete500, overwrite = TRUE)
+usethis::use_data(var_temps500, overwrite = TRUE)
+
 #
 #
 #
