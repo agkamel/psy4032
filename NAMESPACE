@@ -2,6 +2,7 @@
 
 export(compare_t_to_z)
 export(sample_mean_from_rnorm)
+export(sample_mean_from_runif)
 export(sample_sd_from_rnorm)
 export(sd_pop)
 export(var_pop)

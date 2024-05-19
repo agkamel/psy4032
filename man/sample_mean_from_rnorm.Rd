@@ -3,11 +3,14 @@
 \name{sample_mean_from_rnorm}
 \alias{sample_mean_from_rnorm}
 \alias{sample_sd_from_rnorm}
-\title{Echantillonnage de moyennes d'echantillons}
+\alias{sample_mean_from_runif}
+\title{Echantillonnage de statistique d'echantillons}
 \usage{
 sample_mean_from_rnorm(n, k = 1, mean = 0, sd = 1)
 
 sample_sd_from_rnorm(n, k = 1, mean = 0, sd = 1)
+
+sample_mean_from_runif(n, k = 1, min = 0, max = 1)
 }
 \arguments{
 \item{n}{La taille de chaque echantillon}
@@ -17,12 +20,16 @@ sample_sd_from_rnorm(n, k = 1, mean = 0, sd = 1)
 \item{mean}{La moyenne de la population}
 
 \item{sd}{L'ecart type de la population}
+
+\item{min}{Valeur minimale}
+
+\item{max}{Valeur maximale}
 }
 \value{
-Un vecteur de moyennes echantillonnales de longueur k.
+Un vecteur de statistiques echantillonnales de longueur k.
 }
 \description{
-Echantillonnage de moyennes d'echantillons
+Echantillonnage de statistique d'echantillons
 }
 \examples{
 sample_mean_from_rnorm(n = 10, k = 100)
