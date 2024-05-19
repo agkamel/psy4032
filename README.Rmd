@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-Ce package contient plusieurs jeu de données utilisées pour le cours d'Analyse quantitative en psychologie (PSY4032).
+Ce package contient plusieurs jeux de données utilisés spécifiquement pour le cours d'Analyse quantitative en psychologie (PSY4032).
 
 ## Installation
 
@@ -33,13 +33,13 @@ remotes::install_github("agkamel/psy4032")
 
 Une fois le package chargé, les jeux de données sont immédiatement accessibles.
 
-```{r example1, eval=FALSE}
+```{r example1, eval=TRUE}
 library(psy4032)
 var_couleur
 ```
 
 
-```{r example2, eval=FALSE}
+```{r example2, eval=TRUE}
 var_temps
 ```
 
