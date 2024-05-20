@@ -4,6 +4,7 @@
 \alias{sample_mean_from_rnorm}
 \alias{sample_sd_from_rnorm}
 \alias{sample_mean_from_runif}
+\alias{sample_mean_from_rexp}
 \title{Echantillonnage de statistique d'echantillons}
 \usage{
 sample_mean_from_rnorm(n, k = 1, mean = 0, sd = 1)
@@ -11,6 +12,8 @@ sample_mean_from_rnorm(n, k = 1, mean = 0, sd = 1)
 sample_sd_from_rnorm(n, k = 1, mean = 0, sd = 1)
 
 sample_mean_from_runif(n, k = 1, min = 0, max = 1)
+
+sample_mean_from_rexp(n, k = 1, rate = 1)
 }
 \arguments{
 \item{n}{La taille de chaque echantillon}
@@ -24,6 +27,8 @@ sample_mean_from_runif(n, k = 1, min = 0, max = 1)
 \item{min}{Valeur minimale}
 
 \item{max}{Valeur maximale}
+
+\item{rate}{Taux}
 }
 \value{
 Un vecteur de statistiques echantillonnales de longueur k.

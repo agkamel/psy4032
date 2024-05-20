@@ -6,6 +6,7 @@
 #' @param sd L'ecart type de la population
 #' @param min Valeur minimale
 #' @param max Valeur maximale
+#' @param rate Taux
 #'
 #' @return Un vecteur de statistiques echantillonnales de longueur k.
 #' @export
@@ -53,6 +54,22 @@ sample_mean_from_runif <- function(n, k = 1, min = 0, max = 1) {
   output <- vector(mode = "numeric", length = k)
   for (i in 1:k) {
     single_sample <- stats::runif(n, min = min, max = max)
+    output[i] <- mean(single_sample)
+  }
+
+  message(paste0("Nombre d'echantillons: ", k))
+  message(paste0("Taille de chaque echantillon: ", n))
+
+  output
+}
+
+
+#' @rdname sample_mean_from_rnorm
+#' @export
+sample_mean_from_rexp <- function(n, k = 1, rate = 1) {
+  output <- vector(mode = "numeric", length = k)
+  for (i in 1:k) {
+    single_sample <- stats::rexp(n, rate = rate)
     output[i] <- mean(single_sample)
   }
 
