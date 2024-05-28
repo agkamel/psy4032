@@ -24,7 +24,6 @@ compare_two_dist <- function(mean1 = 100,
   mu_1 <- mean1
   sd_1 <- sd1
 
-
   mu_2 <- mean2
   sd_2 <- sd2
 
@@ -35,7 +34,6 @@ compare_two_dist <- function(mean1 = 100,
 
   lim_inf_dist1 <- stats::qnorm(alpha / 2, mean = mu_1, sd = sd_1)
   lim_sup_dist1 <- stats::qnorm(1 - (alpha / 2), mean = mu_1, sd = sd_1)
-
 
   lim_inf_dist2 <- stats::qnorm(alpha / 2, mean = mu_2, sd = sd_2)
   lim_sup_dist2 <- stats::qnorm(1 - (alpha / 2), mean = mu_2, sd = sd_2)
@@ -181,7 +179,7 @@ compare_two_dist <- function(mean1 = 100,
 #' @param mu_1 La moyenne de l'échantillon
 #' @param sigma_1 L'écart type de l'échantillon, si différente de sigma_0
 #' @param n La taille d'échantillon
-#' @param alpha L'erreur de type II, valeur entre 0 et 1
+#' @param alpha L'erreur de type I, valeur entre 0 et 1
 #' @param fill Type de coloration sous la courbe, soit "alpha" (défaut) ou "beta"
 #'
 #' @return Un graphique.
