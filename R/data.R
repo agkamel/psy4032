@@ -220,3 +220,19 @@
 #' }
 #' @source Généré à l'aide du package {agk}.
 "var_temps500"
+
+
+#' data01
+#'
+#' Une base de données avec trois variables.
+#'
+#' @format ## `data01`
+#' Une base de données quelconque.
+#' \describe{
+#'   \item{data01}{data01}
+#' }
+#' @source Généré à l'aide du package {agk}.
+"data01"
+
+
+

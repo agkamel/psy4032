@@ -197,6 +197,109 @@ usethis::use_data(var_temps500, overwrite = TRUE)
 #
 #
 # purrr::map(tb, funs) #|> dplyr::bind_cols()
-#
-# library(agk)
+
+library(agk)
+library(dplyr)
+set.seed(41)
+
+# Pour Test-t
+
+# Une variable dichotomique
+# Deux variable continue
+data01 <- agk::gen_variable(n = 50) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+
+data02 <- agk::gen_variable(n = 49) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+
+data03 <- agk::gen_variable(n = 62) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+
+data04 <- agk::gen_variable(n = 43) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+
+data05 <- agk::gen_variable(n = 63) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+
+data06 <- agk::gen_variable(n = 66) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+
+data07 <- agk::gen_variable(n = 89) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+
+data08 <- agk::gen_variable(n = 52) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+
+data09 <- agk::gen_variable(n = 87) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+
+data10 <- agk::gen_variable(n = 66) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+
+# ANOVA
+# Une variable catégorielles à 3 ou 4 groupes
+# Deux variables continues
+data11 <- agk::gen_variable(n = 50) |> mutate(v1 = as.double(cut(v1, breaks = 3)))
+
+data12 <- agk::gen_variable(n = 49) |> mutate(v1 = as.double(cut(v1, breaks = 4)))
+
+data13 <- agk::gen_variable(n = 62) |> mutate(v1 = as.double(cut(v1, breaks = 3)))
+
+data14 <- agk::gen_variable(n = 43) |> mutate(v1 = as.double(cut(v1, breaks = 4)))
+
+data15 <- agk::gen_variable(n = 63) |> mutate(v1 = as.double(cut(v1, breaks = 3)))
+
+data16 <- agk::gen_variable(n = 66) |> mutate(v1 = as.double(cut(v1, breaks = 4)))
+
+data17 <- agk::gen_variable(n = 89) |> mutate(v1 = as.double(cut(v1, breaks = 3)))
+
+data18 <- agk::gen_variable(n = 52) |> mutate(v1 = as.double(cut(v1, breaks = 4)))
+
+data19 <- agk::gen_variable(n = 87) |> mutate(v1 = as.double(cut(v1, breaks = 3)))
+
+data20 <- agk::gen_variable(n = 66) |> mutate(v1 = as.double(cut(v1, breaks = 4)))
+
+## Corrélation régression
+# Trois variables continues
+data21 <- agk::gen_variable(n = 50)
+
+data22 <- agk::gen_variable(n = 49)
+
+data23 <- agk::gen_variable(n = 62)
+
+data24 <- agk::gen_variable(n = 43)
+
+data25 <- agk::gen_variable(n = 63)
+
+data26 <- agk::gen_variable(n = 66)
+
+data27 <- agk::gen_variable(n = 89)
+
+data28 <- agk::gen_variable(n = 52)
+
+data29 <- agk::gen_variable(n = 87)
+
+data30 <- agk::gen_variable(n = 66)
+
+usethis::use_data(data01, overwrite = TRUE)
+usethis::use_data(data02, overwrite = TRUE)
+usethis::use_data(data03, overwrite = TRUE)
+usethis::use_data(data04, overwrite = TRUE)
+usethis::use_data(data05, overwrite = TRUE)
+usethis::use_data(data06, overwrite = TRUE)
+usethis::use_data(data07, overwrite = TRUE)
+usethis::use_data(data08, overwrite = TRUE)
+usethis::use_data(data09, overwrite = TRUE)
+usethis::use_data(data10, overwrite = TRUE)
+usethis::use_data(data11, overwrite = TRUE)
+usethis::use_data(data12, overwrite = TRUE)
+usethis::use_data(data13, overwrite = TRUE)
+usethis::use_data(data14, overwrite = TRUE)
+usethis::use_data(data15, overwrite = TRUE)
+usethis::use_data(data16, overwrite = TRUE)
+usethis::use_data(data17, overwrite = TRUE)
+usethis::use_data(data18, overwrite = TRUE)
+usethis::use_data(data19, overwrite = TRUE)
+usethis::use_data(data20, overwrite = TRUE)
+usethis::use_data(data21, overwrite = TRUE)
+usethis::use_data(data22, overwrite = TRUE)
+usethis::use_data(data23, overwrite = TRUE)
+usethis::use_data(data24, overwrite = TRUE)
+usethis::use_data(data25, overwrite = TRUE)
+usethis::use_data(data26, overwrite = TRUE)
+usethis::use_data(data27, overwrite = TRUE)
+usethis::use_data(data28, overwrite = TRUE)
+usethis::use_data(data29, overwrite = TRUE)
+usethis::use_data(data30, overwrite = TRUE)
+
 
