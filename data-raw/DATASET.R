@@ -237,29 +237,13 @@ data05 <- agk::gen_variable(n = 63) |> mutate(v1 = as.double(cut(v1, breaks = 2)
                                                           labels = c("groupe1", "groupe2")
                                               ))
 
-data06 <- agk::gen_variable(n = 66) |> mutate(v1 = as.double(cut(v1, breaks = 2)),
-                                              v1 = factor(as.character(v1),
-                                                          levels = c("1", "2"),
-                                                          labels = c("groupe1", "groupe2")
-                                              ))
+data06 <- agk::gen_variable(n = 66)
 
-data07 <- agk::gen_variable(n = 89) |> mutate(v1 = as.double(cut(v1, breaks = 2)),
-                                              v1 = factor(as.character(v1),
-                                                          levels = c("1", "2"),
-                                                          labels = c("groupe1", "groupe2")
-                                              ))
+data07 <- agk::gen_variable(n = 89)
 
-data08 <- agk::gen_variable(n = 52) |> mutate(v1 = as.double(cut(v1, breaks = 2)),
-                                              v1 = factor(as.character(v1),
-                                                          levels = c("1", "2"),
-                                                          labels = c("groupe1", "groupe2")
-                                              ))
+data08 <- agk::gen_variable(n = 52)
 
-data09 <- agk::gen_variable(n = 87) |> mutate(v1 = as.double(cut(v1, breaks = 2)),
-                                              v1 = factor(as.character(v1),
-                                                          levels = c("1", "2"),
-                                                          labels = c("groupe1", "groupe2")
-                                              ))
+data09 <- agk::gen_variable(n = 87)
 
 
 # ANOVA
