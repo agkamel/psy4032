@@ -205,52 +205,131 @@ set.seed(41)
 # Pour Test-t
 
 # Une variable dichotomique
-# Deux variable continue
-data01 <- agk::gen_variable(n = 50) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+# Une variable continue
+data01 <- agk::gen_variable(n = 50) |> mutate(v1 = as.double(cut(v1, breaks = 2)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2"),
+                                                          labels = c("groupe1", "groupe2")
+                                                          ))
 
-data02 <- agk::gen_variable(n = 49) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
 
-data03 <- agk::gen_variable(n = 62) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+data02 <- agk::gen_variable(n = 49) |> mutate(v1 = as.double(cut(v1, breaks = 2)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2"),
+                                                          labels = c("groupe1", "groupe2")
+                                              ))
 
-data04 <- agk::gen_variable(n = 43) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+data03 <- agk::gen_variable(n = 62) |> mutate(v1 = as.double(cut(v1, breaks = 2)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2"),
+                                                          labels = c("groupe1", "groupe2")
+                                              ))
 
-data05 <- agk::gen_variable(n = 63) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+data04 <- agk::gen_variable(n = 43) |> mutate(v1 = as.double(cut(v1, breaks = 2)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2"),
+                                                          labels = c("groupe1", "groupe2")
+                                              ))
 
-data06 <- agk::gen_variable(n = 66) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+data05 <- agk::gen_variable(n = 63) |> mutate(v1 = as.double(cut(v1, breaks = 2)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2"),
+                                                          labels = c("groupe1", "groupe2")
+                                              ))
 
-data07 <- agk::gen_variable(n = 89) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+data06 <- agk::gen_variable(n = 66) |> mutate(v1 = as.double(cut(v1, breaks = 2)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2"),
+                                                          labels = c("groupe1", "groupe2")
+                                              ))
 
-data08 <- agk::gen_variable(n = 52) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+data07 <- agk::gen_variable(n = 89) |> mutate(v1 = as.double(cut(v1, breaks = 2)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2"),
+                                                          labels = c("groupe1", "groupe2")
+                                              ))
 
-data09 <- agk::gen_variable(n = 87) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+data08 <- agk::gen_variable(n = 52) |> mutate(v1 = as.double(cut(v1, breaks = 2)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2"),
+                                                          labels = c("groupe1", "groupe2")
+                                              ))
 
-data10 <- agk::gen_variable(n = 66) |> mutate(v1 = as.double(cut(v1, breaks = 2)))
+data09 <- agk::gen_variable(n = 87) |> mutate(v1 = as.double(cut(v1, breaks = 2)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2"),
+                                                          labels = c("groupe1", "groupe2")
+                                              ))
+
 
 # ANOVA
-# Une variable catégorielles à 3 ou 4 groupes
+# Une variable catégorielles à 3 groupes
 # Deux variables continues
-data11 <- agk::gen_variable(n = 50) |> mutate(v1 = as.double(cut(v1, breaks = 3)))
+data10 <- agk::gen_variable(n = 66) |> mutate(v1 = as.double(cut(v1, breaks = 3)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2", "3"),
+                                                          labels = c("groupe1", "groupe2", "groupe3")
+                                              ))
 
-data12 <- agk::gen_variable(n = 49) |> mutate(v1 = as.double(cut(v1, breaks = 4)))
+data11 <- agk::gen_variable(n = 50) |> mutate(v1 = as.double(cut(v1, breaks = 3)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2", "3"),
+                                                          labels = c("groupe1", "groupe2", "groupe3")
+                                              ))
 
-data13 <- agk::gen_variable(n = 62) |> mutate(v1 = as.double(cut(v1, breaks = 3)))
+data12 <- agk::gen_variable(n = 49) |> mutate(v1 = as.double(cut(v1, breaks = 3)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2", "3"),
+                                                          labels = c("groupe1", "groupe2", "groupe3")
+                                              ))
 
-data14 <- agk::gen_variable(n = 43) |> mutate(v1 = as.double(cut(v1, breaks = 4)))
+data13 <- agk::gen_variable(n = 62) |> mutate(v1 = as.double(cut(v1, breaks = 3)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2", "3"),
+                                                          labels = c("groupe1", "groupe2", "groupe3")
+                                              ))
 
-data15 <- agk::gen_variable(n = 63) |> mutate(v1 = as.double(cut(v1, breaks = 3)))
+data14 <- agk::gen_variable(n = 43) |> mutate(v1 = as.double(cut(v1, breaks = 3)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2", "3"),
+                                                          labels = c("groupe1", "groupe2", "groupe3")
+                                              ))
 
-data16 <- agk::gen_variable(n = 66) |> mutate(v1 = as.double(cut(v1, breaks = 4)))
+data15 <- agk::gen_variable(n = 63) |> mutate(v1 = as.double(cut(v1, breaks = 3)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2", "3"),
+                                                          labels = c("groupe1", "groupe2", "groupe3")
+                                              ))
 
-data17 <- agk::gen_variable(n = 89) |> mutate(v1 = as.double(cut(v1, breaks = 3)))
+data16 <- agk::gen_variable(n = 66) |> mutate(v1 = as.double(cut(v1, breaks = 3)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2", "3"),
+                                                          labels = c("groupe1", "groupe2", "groupe3")
+                                              ))
 
-data18 <- agk::gen_variable(n = 52) |> mutate(v1 = as.double(cut(v1, breaks = 4)))
+data17 <- agk::gen_variable(n = 89) |> mutate(v1 = as.double(cut(v1, breaks = 3)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2", "3"),
+                                                          labels = c("groupe1", "groupe2", "groupe3")
+                                              ))
 
-data19 <- agk::gen_variable(n = 87) |> mutate(v1 = as.double(cut(v1, breaks = 3)))
+data18 <- agk::gen_variable(n = 52) |> mutate(v1 = as.double(cut(v1, breaks = 3)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2", "3"),
+                                                          labels = c("groupe1", "groupe2", "groupe3")
+                                              ))
 
-data20 <- agk::gen_variable(n = 66) |> mutate(v1 = as.double(cut(v1, breaks = 4)))
+data19 <- agk::gen_variable(n = 87) |> mutate(v1 = as.double(cut(v1, breaks = 3)),
+                                              v1 = factor(as.character(v1),
+                                                          levels = c("1", "2", "3"),
+                                                          labels = c("groupe1", "groupe2", "groupe3")
+                                              ))
+
 
 ## Corrélation régression
 # Trois variables continues
+data20 <- agk::gen_variable(n = 66)
+
 data21 <- agk::gen_variable(n = 50)
 
 data22 <- agk::gen_variable(n = 49)
@@ -269,7 +348,52 @@ data28 <- agk::gen_variable(n = 52)
 
 data29 <- agk::gen_variable(n = 87)
 
-data30 <- agk::gen_variable(n = 66)
+
+
+## Chi-carré
+# Trois variables dichotomiques
+data30 <- agk::gen_variable(n = 66)  |> mutate(v1 = as.double(cut(v1, breaks = 2)),
+                                               v1 = factor(as.character(v1),
+                                                           levels = c("1", "2"),
+                                                           labels = c("groupe1", "groupe2")
+                                               ),
+                                               v2 = as.double(cut(v2, breaks = 2)),
+                                               v2 = factor(as.character(v2),
+                                                           levels = c("a", "b"),
+                                                           labels = c("groupe_a", "groupe_b")),
+                                               v3 = as.double(cut(v3, breaks = 3)),
+                                               v3 = factor(as.character(v3),
+                                                           levels = c("a", "b"),
+                                                           labels = c("groupe_a", "groupe_b")))
+data31 <- agk::gen_variable(n = 66)  |> mutate(v1 = as.double(cut(v1, breaks = 2)),
+                                               v1 = factor(as.character(v1),
+                                                           levels = c("1", "2"),
+                                                           labels = c("groupe1", "groupe2")
+                                               ),
+                                               v2 = as.double(cut(v2, breaks = 2)),
+                                               v2 = factor(as.character(v2),
+                                                           levels = c("a", "b"),
+                                                           labels = c("groupe_a", "groupe_b")),
+                                               v3 = as.double(cut(v3, breaks = 3)),
+                                               v3 = factor(as.character(v3),
+                                                           levels = c("a", "b"),
+                                                           labels = c("groupe_a", "groupe_b")))
+
+data32 <- agk::gen_variable(n = 66)  |> mutate(v1 = as.double(cut(v1, breaks = 2)),
+                                               v1 = factor(as.character(v1),
+                                                           levels = c("1", "2"),
+                                                           labels = c("groupe1", "groupe2")
+                                               ),
+                                               v2 = as.double(cut(v2, breaks = 2)),
+                                               v2 = factor(as.character(v2),
+                                                           levels = c("a", "b"),
+                                                           labels = c("groupe_a", "groupe_b")),
+                                               v3 = as.double(cut(v3, breaks = 3)),
+                                               v3 = factor(as.character(v3),
+                                                           levels = c("a", "b"),
+                                                           labels = c("groupe_a", "groupe_b")))
+
+
 
 usethis::use_data(data01, overwrite = TRUE)
 usethis::use_data(data02, overwrite = TRUE)
