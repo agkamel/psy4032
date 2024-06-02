@@ -25,7 +25,7 @@ visualize_area(
 
 \item{n}{La taille d'échantillon}
 
-\item{alpha}{L'erreur de type II, valeur entre 0 et 1}
+\item{alpha}{L'erreur de type I, valeur entre 0 et 1}
 
 \item{fill}{Type de coloration sous la courbe, soit "alpha" (défaut) ou "beta"}
 }
