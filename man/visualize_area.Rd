@@ -11,7 +11,8 @@ visualize_area(
   sigma_1 = NULL,
   n = 50,
   alpha = 0.05,
-  fill = "alpha"
+  fill = "alpha",
+  alternative = "two.sided"
 )
 }
 \arguments{
@@ -28,6 +29,8 @@ visualize_area(
 \item{alpha}{L'erreur de type I, valeur entre 0 et 1}
 
 \item{fill}{Type de coloration sous la courbe, soit "alpha" (défaut) ou "beta"}
+
+\item{alternative}{Direction du test: "two.sided" pour bilatéral (défaut), "greater" pour unilatéral supérieur, "less" pour unilatéral inférieur}
 }
 \value{
 Un graphique.
