@@ -340,7 +340,7 @@ set.seed(41)
 data30 <- agk::gen_variable(n = 65, v = 2)  |> mutate(v1 = as.double(cut(v1, breaks = 2)),
                                                v1 = factor(as.character(v1),
                                                            levels = c("1", "2"),
-                                                           labels = c("groupe1", "groupe2")
+                                                           labels = c("satisfaisant", "insatisfaisant")
                                                ),
                                                v2 = as.double(cut(v2, breaks = 2)),
                                                v2 = factor(as.character(v2),
@@ -353,7 +353,7 @@ table(data30)
 data31 <- agk::gen_variable(n = 151, v = 2)  |> mutate(v1 = as.double(cut(v1, breaks = 2)),
                                                        v1 = factor(as.character(v1),
                                                                    levels = c("1", "2"),
-                                                                   labels = c("groupe1", "groupe2")
+                                                                   labels = c("satisfaisant", "insatisfaisant")
                                                        ),
                                                        v2 = as.double(cut(v2, breaks = 2)),
                                                        v2 = factor(as.character(v2),
@@ -366,7 +366,7 @@ table(data31)
 data32 <- agk::gen_variable(n = 87, v = 2)  |> mutate(v1 = as.double(cut(v1, breaks = 2)),
                                                        v1 = factor(as.character(v1),
                                                                    levels = c("1", "2"),
-                                                                   labels = c("groupe1", "groupe2")
+                                                                   labels = c("satisfaisant", "insatisfaisant")
                                                        ),
                                                        v2 = as.double(cut(v2, breaks = 2)),
                                                        v2 = factor(as.character(v2),
@@ -380,7 +380,7 @@ table(data32)
 data33 <- agk::gen_variable(n = 55, v = 2)  |> mutate(v1 = as.double(cut(v1, breaks = 2)),
                                                       v1 = factor(as.character(v1),
                                                                   levels = c("1", "2"),
-                                                                  labels = c("groupe1", "groupe2")
+                                                                  labels = c("satisfaisant", "insatisfaisant")
                                                       ),
                                                       v2 = as.double(cut(v2, breaks = 2)),
                                                       v2 = factor(as.character(v2),
@@ -393,7 +393,7 @@ table(data33)
 data34 <- agk::gen_variable(n = 79, v = 3)  |> mutate(v1 = as.double(cut(v1, breaks = 2)),
                                                       v1 = factor(as.character(v1),
                                                                   levels = c("1", "2"),
-                                                                  labels = c("groupe1", "groupe2")
+                                                                  labels = c("satisfaisant", "insatisfaisant")
                                                       ),
                                                       v2 = as.double(cut(v2, breaks = 3)),
                                                       v2 = factor(as.character(v2),
@@ -401,18 +401,18 @@ data34 <- agk::gen_variable(n = 79, v = 3)  |> mutate(v1 = as.double(cut(v1, bre
                                                                   labels = c("haut", "moyen", "bas")),
                                                       v3 = NULL
 ) |>
-  add_row(v1 = "groupe2", v2 = "haut") |>
-  add_row(v1 = "groupe2", v2 = "haut") |>
-  add_row(v1 = "groupe2", v2 = "haut") |>
-  add_row(v1 = "groupe2", v2 = "haut") |>
-  add_row(v1 = "groupe1", v2 = "bas")
+  add_row(v1 = "insatisfaisant", v2 = "haut") |>
+  add_row(v1 = "insatisfaisant", v2 = "haut") |>
+  add_row(v1 = "insatisfaisant", v2 = "haut") |>
+  add_row(v1 = "insatisfaisant", v2 = "haut") |>
+  add_row(v1 = "satisfaisant", v2 = "bas")
 
 table(data34)
 
 data35 <- agk::gen_variable(n = 90, v = 3)  |> mutate(v1 = as.double(cut(v1, breaks = 2)),
                                                       v1 = factor(as.character(v1),
                                                                   levels = c("1", "2"),
-                                                                  labels = c("groupe1", "groupe2")
+                                                                  labels = c("satisfaisant", "insatisfaisant")
                                                       ),
                                                       v2 = as.double(cut(v2, breaks = 3)),
                                                       v2 = factor(as.character(v2),
@@ -420,8 +420,8 @@ data35 <- agk::gen_variable(n = 90, v = 3)  |> mutate(v1 = as.double(cut(v1, bre
                                                                   labels = c("haut", "moyen", "bas")),
                                                       v3 = NULL
 ) |>
-  add_row(v1 = "groupe1", v2 = "haut") |>
-  add_row(v1 = "groupe1", v2 = "haut")
+  add_row(v1 = "satisfaisant", v2 = "haut") |>
+  add_row(v1 = "satisfaisant", v2 = "haut")
 
 table(data35)
 
