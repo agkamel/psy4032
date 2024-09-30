@@ -1,6 +1,6 @@
 ## code to prepare `DATASET` dataset goes here
 
-set.seed(41)
+set.seed(43)
 
 var_age <- agk::create_discrete(mean = 35, sd = 15)
 var_genre <- agk::create_nominal(points = 2, levels = c("h", "f"))
