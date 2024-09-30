@@ -11,17 +11,17 @@
 "var_age"
 
 
-#' Sexe
+#' Genre
 #'
 #' Variable nominale à deux catégories ayant 20 participants.
 #'
-#' @format ## `var_sexe`
+#' @format ## `var_genre`
 #' Un vecteur de longueur 20.
 #' \describe{
-#'   \item{var_sexe}{Sexe du participant}
+#'   \item{var_genre}{Genre du participant}
 #' }
 #' @source Généré à l'aide du package {agk}.
-"var_sexe"
+"var_genre"
 
 
 #' Présence
@@ -137,7 +137,7 @@
 #' \describe{
 #'   \item{id}{Numéro d'identification unique du participant}
 #'   \item{age}{Âge du participant}
-#'   \item{sexe}{Sexe du participant}
+#'   \item{genre}{Genre du participant}
 #'   \item{presence}{Présence ou absence du participant}
 #'   \item{temps}{Mesure de temps}
 #'   \item{distance}{Mesure de distance}
@@ -160,7 +160,7 @@
 #' \describe{
 #'   \item{id}{Numéro d'identification unique du participant}
 #'   \item{age}{Âge du participant}
-#'   \item{sexe}{Sexe du participant}
+#'   \item{genre}{Genre du participant}
 #'   \item{presence}{Présence ou absence du participant}
 #'   \item{temps}{Mesure de temps}
 #'   \item{distance}{Mesure de distance}
@@ -183,7 +183,7 @@
 #' \describe{
 #'   \item{id}{Numéro d'identification unique du participant}
 #'   \item{age}{Âge du participant}
-#'   \item{sexe}{Sexe du participant}
+#'   \item{genre}{Genre du participant}
 #'   \item{presence}{Présence ou absence du participant}
 #'   \item{temps}{Mesure de temps}
 #'   \item{distance}{Mesure de distance}

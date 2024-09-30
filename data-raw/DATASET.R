@@ -3,7 +3,7 @@
 set.seed(41)
 
 var_age <- agk::create_discrete(mean = 35, sd = 15)
-var_sexe <- agk::create_nominal(points = 2, levels = c("h", "f"))
+var_genre <- agk::create_nominal(points = 2, levels = c("h", "f"))
 var_presence <- agk::create_dichotomous(levels = c("present", "absent"))
 var_temps <- stats::rnorm(20, mean = 25, sd = 5)
 var_distance <- stats::rnorm(20, mean = 40, sd = 10)
@@ -16,7 +16,7 @@ var_score02 <- agk::create_discrete(mean = 70, sd = 7)
 
 
 usethis::use_data(var_age, overwrite = TRUE)
-usethis::use_data(var_sexe, overwrite = TRUE)
+usethis::use_data(var_genre, overwrite = TRUE)
 usethis::use_data(var_presence, overwrite = TRUE)
 usethis::use_data(var_temps, overwrite = TRUE)
 usethis::use_data(var_distance, overwrite = TRUE)
@@ -29,7 +29,7 @@ usethis::use_data(var_score02, overwrite = TRUE)
 tab20 <- tibble::tibble(
   id = 1:20,
   age = var_age,
-  sexe = var_sexe,
+  genre = var_genre,
   presence = var_presence,
   temps = var_temps,
   distance = var_distance,
@@ -47,7 +47,7 @@ tab500 <- agk::create_dataset(n = 500, v = 10)
 tab500 <- tab500 |> dplyr::mutate(
   id = 1:nrow(tab500),
   age = agk::standardize(v01, mean = 35, sd = 15) |> agk::as_discrete(),
-  sexe = agk::as_nominal(v02, points = 2, levels = c("h", "f")),
+  genre = agk::as_nominal(v02, points = 2, levels = c("h", "f")),
   presence = agk::as_dichotomous(v03, points = 2, levels = c("present", "absent")),
   temps = agk::standardize(v04, mean = 25, sd = 5) |> agk::as_continuous(),
   distance = agk::standardize(v05, mean = 75, sd = 16) |> agk::as_continuous(),
@@ -66,7 +66,7 @@ tab10000 <- agk::create_dataset(n = 10000, v = 10)
 tab10000 <- tab10000 |> dplyr::mutate(
   id = 1:nrow(tab10000),
   age = agk::standardize(v01, mean = 35, sd = 15) |> agk::as_discrete(),
-  sexe = agk::as_nominal(v02, points = 2, levels = c("h", "f")),
+  genre = agk::as_nominal(v02, points = 2, levels = c("h", "f")),
   presence = agk::as_dichotomous(v03, points = 2, levels = c("present", "absent")),
   temps = agk::standardize(v04, mean = 25, sd = 5) |> agk::as_continuous(),
   distance = agk::standardize(v05, mean = 75, sd = 16) |> agk::as_continuous(),
@@ -110,7 +110,7 @@ usethis::use_data(var_temps500, overwrite = TRUE)
 #
 #   "education", "ordinal", 21, 12, 2, NA,
 #   "agressitive", "discrete", NA, 10, 7, NA,
-#   "sexe", "nominal", 2, 1.5, 0.5, c("homme", "femme"),
+#   "genre", "nominal", 2, 1.5, 0.5, c("homme", "femme"),
 #   "age", "discrete", NA, 35, 15, NA)
 #
 # #data_context
