@@ -486,9 +486,11 @@ visualize_area <- function(mu_0 = 100, sigma_0 = 15,
                    sd1 = erreur_type_0,
                    mean2 = mu_1,
                    sd2 = erreur_type_1,
+                   n = n,
                    alpha = alpha,
                    fill = fill,
-                   alternative = alternative)
+                   alternative = alternative
+                   )
 
 }
 
