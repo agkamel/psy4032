@@ -333,13 +333,15 @@ compare_two_dist <- function(mean1 = 100,
     geom = "label",
     x = mu_1,
     y = 0.42,
-    label = paste0("mu_0 = ", mu_1)
+    label = paste0("mu[0] == ", mu_1),
+    parse = TRUE
   ) +
     ggplot2::annotate(
       geom = "label",
       x = mu_2,
       y = 0.35,
-      label = paste0("mu_1 = ", mu_2),
+      label = paste0("mu[1] == ", mu_2),
+      parse = TRUE,
       color = "blue"
     )
 
