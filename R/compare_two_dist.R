@@ -380,6 +380,7 @@ compare_two_dist <- function(mean1 = 100,
       x = lim_inf_dist2,
       y = stats::dnorm(valeur_critique_sup) - 0.03,
       label = paste0("IC inf.\n", round(lim_inf_dist2, 2)),
+      alpha = 0.70,
       color = "blue"
     )
 
@@ -394,6 +395,7 @@ compare_two_dist <- function(mean1 = 100,
       x = lim_sup_dist2,
       y = stats::dnorm(valeur_critique_inf) - 0.03,
       label = paste0("IC sup.\n", round(lim_sup_dist2, 2)),
+      alpha = 0.70,
       color = "blue"
     )
 
