@@ -200,12 +200,14 @@ usethis::use_data(var_temps500, overwrite = TRUE)
 
 library(agk)
 library(dplyr)
-set.seed(41)
+set.seed(43)
 
 # Pour Test-t
 
 # Une variable dichotomique
 # Une variable continue
+
+# Test-t avec deux échantillons indépendants
 data01 <- agk::gen_variable(n = 50) |> mutate(v1 = as.double(cut(v1, breaks = 2)),
                                               v1 = factor(as.character(v1),
                                                           levels = c("1", "2"),
